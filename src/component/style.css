@@ -1,0 +1,10 @@
+.Container {
+    display: grid;
+    justify-content: center;
+    margin-top: 20em;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
