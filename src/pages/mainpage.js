@@ -7,6 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Modal from '../component/modal';
 import Routertest from './routertest';
+import Weatherapp from './weatherapp';
 
 
 const Mainpage = () => {
@@ -16,7 +17,9 @@ const Mainpage = () => {
         return { column, column1, colum2 };
     }
 
-    const testing = (<Routertest />)
+    const testing = (<Weatherapp />)
+
+
 
     const rows = [
         createData(<Modal data={testing} />, 6.0, 24),
