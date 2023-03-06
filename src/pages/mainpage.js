@@ -6,7 +6,7 @@ import '../component/style.css'
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Modal from '../component/modal';
-import Weatherapp from './weatherapp';
+import Weatherapp from '../component/weatherapp/weatherapp';
 import BoxSx from '../component/box';
 import data from '../component/assets/data.json'
 import weather from '../component/weatherapp/img/weather.png'
@@ -23,10 +23,11 @@ const Mainpage = () => {
     const weatherapp = (<Weatherapp />)
     const box =(<BoxSx title={data[0].title} description={data[0].Description} img={weather}/>)
 
-    //
+    //Image with AI
+    const imgAi = (<BoxSx title={data[1].title} description={data[1].Description} img={weather}/>)
 
     const rows = [
-        createData(<Modal data={weatherapp} value={box}/>, 6.0, 24),
+        createData(<Modal data={weatherapp} value={box}/>, <Modal data={weatherapp} value={imgAi}/>, 24),
         createData(237, 9.0, 37),
     ];
 
@@ -36,8 +37,8 @@ const Mainpage = () => {
             <TableContainer component={Paper}>
                 <TableBody sx={{ textAlign: 'center' }}>
                     {rows.map((row) => (
-                        <TableRow>
-                            <TableCell align="right">{row.column}</TableCell>
+                        <TableRow >
+                            <TableCell  align="right">{row.column}</TableCell>
                             <TableCell align="right">{row.column1}</TableCell>
                             <TableCell align="right">{row.colum2}</TableCell>
                         </TableRow>

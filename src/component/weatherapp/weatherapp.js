@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../component/weatherapp/weather.css'
+import '../weatherapp/weather.css'
 import axios from 'axios';
 import { Button } from '@mui/material';
 

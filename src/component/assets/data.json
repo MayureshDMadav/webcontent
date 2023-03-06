@@ -1,12 +1,12 @@
 [
     {
         "title":"Weather App",
-        "Description":" Get Realtime-Time Weather Update on the basis of your location.",
-        "img":"../component/weatherapp/img/weather.png"
+        "Description":" Get Realtime-Time Weather Update on the basis of your location."
+        
     },
     {
         "title":"Word To Image",
-        "Description":"An Open AI app to generate image from words with any efforts.",
-        "img":"../component/weatherapp/img/weather.png"
+        "Description":"An Open AI app to generate image from words without any efforts."
+        
     }
 ]
