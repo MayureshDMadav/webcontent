@@ -4,9 +4,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import img from'../component/weatherapp/img/weather.png'
 
-const  BoxSx = ()=> {
+
+const  BoxSx = ({title,description,img})=> {
+
   return (
     <Card sx={{ maxWidth: 345 }}>
     <CardActionArea>
@@ -18,10 +19,10 @@ const  BoxSx = ()=> {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Weather App
+         {title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Get Realtime-Time Weather Update on the basis of your location.
+       {description}
         </Typography>
       </CardContent>
     </CardActionArea>
