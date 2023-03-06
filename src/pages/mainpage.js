@@ -17,12 +17,12 @@ const Mainpage = () => {
         return { column, column1, colum2 };
     }
 
-    const testing = (<Weatherapp />)
+    const weatherapp = (<Weatherapp />)
 
 
 
     const rows = [
-        createData(<Modal data={testing} />, 6.0, 24),
+        createData(<Modal data={weatherapp} />, 6.0, 24),
         createData(237, 9.0, 37),
     ];
 

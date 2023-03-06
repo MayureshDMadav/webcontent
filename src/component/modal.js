@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 const Modal = ({ data }) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
-    console.log(data);
+    
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
