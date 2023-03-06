@@ -3,7 +3,7 @@ import Popover from '@mui/material/Popover';
 import Button from '@mui/material/Button';
 
 
-const Modal = ({ data }) => {
+const Modal = ({ data ,value}) => {
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     
@@ -20,9 +20,9 @@ const Modal = ({ data }) => {
         setAnchorEl(null);
     };
     return (
-        <div>
-            <Button aria-describedby={id} variant="outlined" onClick={handleClick}>
-                Open Popover
+        <span >
+            <Button aria-describedby={id}  onClick={handleClick}>
+               {value}
             </Button>
             <Popover
                 id={id}
@@ -40,7 +40,7 @@ const Modal = ({ data }) => {
             >
                 {data}
             </Popover>
-        </div>
+        </span>
     )
 }
 

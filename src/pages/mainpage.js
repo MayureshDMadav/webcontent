@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import Modal from '../component/modal';
 import Routertest from './routertest';
 import Weatherapp from './weatherapp';
+import BoxSx from '../component/box';
 
 
 const Mainpage = () => {
@@ -18,11 +19,11 @@ const Mainpage = () => {
     }
 
     const weatherapp = (<Weatherapp />)
-
+    const box =(<BoxSx/>)
 
 
     const rows = [
-        createData(<Modal data={weatherapp} />, 6.0, 24),
+        createData(<Modal data={weatherapp} value={box}/>, 6.0, 24),
         createData(237, 9.0, 37),
     ];
 
