@@ -48,8 +48,8 @@ const Musicplayer = () =>{
       noValidate
       autoComplete="off"
     >
-      <TextField id="outlined-basic" size='small' label="Enter Music Name" variant="outlined" sx={{height:'1.7em !important',color:'white'}} onChange={handleChange} />
-      <Button variant="contained" size="large" onClick={findMusic}>Search</Button>
+      <TextField id="outlined-basic" size='small' label="Enter Music Name" variant="outlined" sx={{height:'1.8em !important',color:'white'}} onChange={handleChange} /><br/>
+      <Button variant="contained" size="large" onClick={findMusic}>Search Music</Button>
      
     </Box>
            

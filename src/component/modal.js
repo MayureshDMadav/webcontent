@@ -20,6 +20,8 @@ const Modal = ({ data ,value}) => {
         setAnchorEl(null);
     };
     return (
+       
+  
         <span >
             <Button aria-describedby={id}  onClick={handleClick}>
                {value}
@@ -41,6 +43,7 @@ const Modal = ({ data ,value}) => {
                 {data}
             </Popover>
         </span>
+    
     )
 }
 
