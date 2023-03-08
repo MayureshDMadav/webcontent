@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Mainpage from './pages/mainpage';
-import Openaiimage from './component/imageGen/openaiimage';
-
+import Musicplayer from './component/musicplayer/musicplayer';
+import Mainpage from './pages/mainpage'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Openaiimage />
+   {/* <Musicplayer/> */}
     {/* <Weatherapp /> */}
+    <Mainpage/>
   </React.StrictMode>
 );

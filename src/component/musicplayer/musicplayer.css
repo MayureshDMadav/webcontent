@@ -1,0 +1,51 @@
+.player{
+    box-sizing: border-box;
+    height: 100%;
+    margin-left: auto;
+    background-image:linear-gradient(#afdde0,#929fac);
+    text-align: center;
+    /* display: flex; */
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.player tr{
+    background-image: linear-gradient(162deg, #522525,transparent);
+}
+
+.player table{
+    border-style: outset;
+    border-radius: 5px;
+    display: table-header-group;
+    margin: 8px;
+    box-shadow: 5px 5px 3px 3px darkgrey;
+    width: 8rem;
+
+}
+
+.player th{
+    text-align: center;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-style: dashed;
+}
+
+.player td{
+    border-style: outset;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.player p{
+    text-align: left;
+    padding: 23px;
+}
+
+.player audio{
+    width: 100%;
+    padding: 2px;
+}

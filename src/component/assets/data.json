@@ -5,8 +5,8 @@
         
     },
     {
-        "title":"Word To Image",
-        "Description":"An Open AI app to generate image from words without any efforts."
+        "title":"Music App",
+        "Description":"A music player build on DezzerApi poweredBy Radpid API."
         
     }
 ]

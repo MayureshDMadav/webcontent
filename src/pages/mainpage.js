@@ -10,6 +10,8 @@ import Weatherapp from '../component/weatherapp/weatherapp';
 import BoxSx from '../component/box';
 import data from '../component/assets/data.json'
 import weather from '../component/weatherapp/img/weather.png'
+import music from  '../component/musicplayer/img/music.png'
+import Musicplayer from '../component/musicplayer/musicplayer';
 
 const Mainpage = () => {
 
@@ -23,11 +25,12 @@ const Mainpage = () => {
     const weatherapp = (<Weatherapp />)
     const box =(<BoxSx title={data[0].title} description={data[0].Description} img={weather}/>)
 
-    //Image with AI
-    const imgAi = (<BoxSx title={data[1].title} description={data[1].Description} img={weather}/>)
+    //MusicApp
+    const musicApp = (<Musicplayer/>)
+    const musicplayer = (<BoxSx title={data[1].title} description={data[1].Description} img={music}/>)
 
     const rows = [
-        createData(<Modal data={weatherapp} value={box}/>, <Modal data={weatherapp} value={imgAi}/>, 24),
+        createData(<Modal data={weatherapp} value={box}/>, <Modal data={musicApp} value={musicplayer}/>, 24),
         createData(237, 9.0, 37),
     ];
 
