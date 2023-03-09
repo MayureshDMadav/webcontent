@@ -4,8 +4,13 @@
     margin-left: auto;
     background: linear-gradient(294deg, #e97070, #101092);
     text-align: center;
-    /* display: flex; */
     margin-right: auto;
     overflow: hidden;
     width: 500px;
+}
+
+
+.reciepe h2{
+    color: white;
+    font-size: 2em;
 }
