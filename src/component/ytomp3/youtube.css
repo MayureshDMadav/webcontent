@@ -1,0 +1,19 @@
+.youtube-mp3{
+    box-sizing: border-box;
+    height: 59vh;
+    margin-left: auto;
+    background: linear-gradient(294deg, #e97070, #101092);
+    text-align: center;
+    /* display: flex; */
+    margin-right: auto;
+    overflow: hidden;
+    width: 500px;
+}
+
+.youtube-mp3 h1{
+    color: white;
+}
+
+.youtube-mp3 a:hover{
+    color: blue;
+}
