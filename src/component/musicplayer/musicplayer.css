@@ -1,4 +1,4 @@
-.player{
+.music-player{
     box-sizing: border-box;
     height: 87vh;
     margin-left: auto;
@@ -19,11 +19,11 @@ input#outlined-basic{
 }
 
 
-.player tr{
+.music-player tr{
     background-image: linear-gradient(162deg, #522525,transparent);
 }
 
-.player table{
+.music-player table{
     border-style: outset;
     border-radius: 5px;
     display: table-header-group;
@@ -36,7 +36,7 @@ input#outlined-basic{
 
 
 
-.player th{
+.music-player th{
     text-align: center;
     display: block;
     color: white;
@@ -44,7 +44,7 @@ input#outlined-basic{
     text-decoration-style: dashed;
 }
 
-.player td{
+.music-player td{
     border-style: outset;
     display: flex;
     justify-content: space-between;
@@ -53,16 +53,16 @@ input#outlined-basic{
     text-transform: uppercase;
 }
 
-.player p{
+.music-player p{
     text-align: left;
     padding: 23px;
 }
 
-.player audio{
+.music-player audio{
     width: 100%;
     padding: 2px;
 }
 
-.player h1{
+.music-player h1{
     color:white;
 }

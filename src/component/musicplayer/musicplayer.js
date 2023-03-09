@@ -37,7 +37,7 @@ const Musicplayer = () =>{
 
 
     return(
-        <div className='player'>
+        <div className='music-player'>
        
             <h1>Music Player</h1>
             <Box
