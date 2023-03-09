@@ -38,7 +38,6 @@ const Dictionary = () => {
       <br/>
       <Button  onClick={handlSubmit} variant="contained" sx={{marginTop:'1rem'}} >Find Meaning</Button>
       <br/>
-      <p style={{marginTop:'1rem',marginBottom:'-1.3em',color:'white',fontSize:'2rem'}}>Title: {!words ?'':JSON.stringify(words.word).replace('"',"").replace('"',"")}</p>
       <div id='dic-container'>
        {!words ?'':<p className='text_p'> {JSON.stringify(words.definition).replace('"',"").replace('"',"")}</p>}
       </div>
