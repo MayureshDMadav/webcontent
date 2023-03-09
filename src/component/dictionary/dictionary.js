@@ -36,7 +36,7 @@ const Dictionary = () => {
       <br/>
       <TextField id="outlined-basic" label="Type Here" variant="outlined" onChange={(e)=>setValue(e.target.value)}/>
       <br/>
-      <Button  onClick={handlSubmit} variant="contained" sx={{marginTop:'1rem'}} >Find Reciepe</Button>
+      <Button  onClick={handlSubmit} variant="contained" sx={{marginTop:'1rem'}} >Find Meaning</Button>
       <br/>
       <p style={{marginTop:'1rem',marginBottom:'-1.3em',color:'white',fontSize:'2rem'}}>Title: {!words ?'':JSON.stringify(words.word).replace('"',"").replace('"',"")}</p>
       <div id='dic-container'>

@@ -1,3 +1,13 @@
+label#outlined-basic-label{
+    color: #fff !important;
+}
+
+
+input#outlined-basic{
+    color: white;
+}
+
+
 .music-player{
     box-sizing: border-box;
     height: 81vh;
@@ -7,15 +17,6 @@
     margin-right: auto;
     overflow: hidden;
     width: 500px;
-}
-
-label#outlined-basic-label{
-    color: #fff !important;
-}
-
-
-input#outlined-basic{
-    color: white;
 }
 
 
