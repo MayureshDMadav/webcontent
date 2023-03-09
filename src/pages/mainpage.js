@@ -13,8 +13,13 @@ import weather from '../component/weatherapp/img/weather.png'
 import music from  '../component/musicplayer/img/music.png'
 import urlShort from '../component/urlshortner/img/urlshortener.png'
 import Musicplayer from '../component/musicplayer/musicplayer';
+import Reciepe from '../component/reciepe/reciepe'
+import Dictonary from '../component/dictionary/dictionary'
 import Urlshortner from '../component/urlshortner/urlshortner';
+import Receipe from '../component/reciepe/img/reciepe.png'
+import dicImg from '../component/dictionary/img/dic.png'
 import '../pages/mainPage.css'
+
 
 const Mainpage = () => {
 
@@ -36,10 +41,18 @@ const Mainpage = () => {
     const urlShortner =(<Urlshortner/>)
     const urlShortnertxt = (<BoxSx title={data[2].title} description={data[2].Description} img={urlShort}/>)
 
+    //Receipe App
+    const reciepeC = (<Reciepe/>)
+    const reciepe = (<BoxSx title={data[3].title} description={data[3].Description} img={Receipe}/>)
+
+    //Dictonary
+    const dictonary = (<Dictonary/>)
+    const dictonorytext=(<BoxSx title={data[4].title} description={data[4].Description} img={dicImg}/>)
+
 
     const rows = [
         createData(<Modal data={weatherapp} value={box}/>, <Modal data={musicApp} value={musicplayer}/>,<Modal data={urlShortner} value={urlShortnertxt}/> ),
-        createData(237, 9.0, 37),
+        createData(<Modal data={reciepeC} value={reciepe}/>,<Modal data={dictonary} value={dictonorytext}/>, 37),
     ];
 
 

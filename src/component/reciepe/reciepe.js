@@ -47,7 +47,7 @@ const  Reciepe = () => {
       url: 'https://recipe-by-api-ninjas.p.rapidapi.com/v1/recipe',
       params: {query: value},
       headers: {
-        'X-RapidAPI-Key': '9192bec45bmsh602ac3bc1adcc05p12a311jsnc89398bab041',
+        'X-RapidAPI-Key': process.env.REACT_APP_SECRET_KEY,
         'X-RapidAPI-Host': 'recipe-by-api-ninjas.p.rapidapi.com'
       }
     };
@@ -86,11 +86,11 @@ const  Reciepe = () => {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={style}>
-        <strong>Title</strong><br/>
-          <Typography id="keep-mounted-modal-title" variant="h6" component="h5">
-          {res.title}
+        <strong>Ingredients</strong><br/>
+          <Typography id="keep-mounted-modal-title" sx={{ fontSize:'12px'}}>
+           {res.ingredients}
           </Typography>
-          <Typography id="keep-mounted-modal-title" sx={{ mt: 2 }}>
+          <Typography id="keep-mounted-modal-title" sx={{ mt: 2 ,fontSize:'13px'}}>
           <strong>Instructions</strong><br/>
           {res.instructions}
           </Typography>

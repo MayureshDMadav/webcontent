@@ -11,7 +11,7 @@ const Musicplayer = () =>{
 
     const Headers = {
         'x-rapidapi-host': 'deezerdevs-deezer.p.rapidapi.com',
-        'x-rapidapi-key': '9192bec45bmsh602ac3bc1adcc05p12a311jsnc89398bab041'
+        'x-rapidapi-key': process.env.REACT_APP_SECRET_KEY
     }
 
 

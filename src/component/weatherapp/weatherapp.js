@@ -7,7 +7,7 @@ const Weatherapp = () => {
     const [getData, setdata] = useState({});
     const [location, setLocation] = useState('');
 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=504bc64632dbd77f90d1b5fed467172d`
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.REACT_APP_SECRET_KEY_W}`
 
 
     const FetcInfo = () => {

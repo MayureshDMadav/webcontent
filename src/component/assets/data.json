@@ -12,5 +12,13 @@
     {
         "title":"Url Shortener",
         "Description":"Web App to make your URL shorter and faster in no time."
+    },
+    {
+        "title":"Receipe Finder",
+        "Description":"A web app to find the receipe of your favorite food ."
+    },
+    {
+        "title":"Dictionary",
+        "Description":"A web app to provide information about words in a dictionary"
     }
 ]

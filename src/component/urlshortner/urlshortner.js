@@ -27,7 +27,7 @@ const  Urlshortner = () => {
 
     const header = {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'X-RapidAPI-Key': '9192bec45bmsh602ac3bc1adcc05p12a311jsnc89398bab041',
+        'X-RapidAPI-Key': process.env.REACT_APP_SECRET_KEY,
        'X-RapidAPI-Host': 'url-shortener-service.p.rapidapi.com'
     }
 

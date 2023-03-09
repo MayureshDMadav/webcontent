@@ -1,6 +1,6 @@
-.url-shortner{
+.dictonary{
     box-sizing: border-box;
-    height: 50vh;
+    height: 59vh;
     margin-left: auto;
     background: linear-gradient(294deg, #e97070, #101092);
     text-align: center;
@@ -10,26 +10,21 @@
     width: 500px;
 }
 
-h2{
+.dictonary h1{
     color: white;
-    font-size: 2em;
-    margin-top: 10rem;
 }
 
-h4{
+#dic-container{
+    border: 1px solid white;
+    margin-top: 4rem;
+    overflow: hidden;
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 31vh;
     color: white;
-    font-size: 2em;
-    margin-top: 5rem;
 }
 
-h3{
-    color: rgb(26, 23, 23);
-    font-size: 1.5em;
-   
-}
-
-.h3-child{
-    color: white;
-    font-size: 1.5em;
-    margin-top: 15rem;
+.text_p{
+    font-size: 13px;
 }
