@@ -10,7 +10,7 @@ input#outlined-basic{
 
 .music-player{
     box-sizing: border-box;
-    height: 81vh;
+    height: 84vh;
     margin-left: auto;
     background: linear-gradient(294deg, #e97070, #101092);
     text-align: center;
@@ -66,4 +66,14 @@ input#outlined-basic{
 
 .music-player h1{
     color:white;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows:1fr 1fr;
+    justify-content: space-between;   
+    gap: 2px;
 }
