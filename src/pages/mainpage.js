@@ -20,11 +20,21 @@ import Dictonary from "../component/dictionary/dictionary";
 import Urlshortner from "../component/urlshortner/urlshortner";
 import Receipe from "../component/reciepe/img/reciepe.png";
 import dicImg from "../component/dictionary/img/dic.png";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
 import "../pages/mainPage.css";
 
 const Mainpage = () => {
+  const username = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
+
   function createData(column, column1, colum2) {
     return { column, column1, colum2 };
+  }
+
+  const handleLogout = ()=>{
+    localStorage.removeItem("loggedin");
+    navigate("/Loginpage")
   }
 
   //Weather Box
@@ -101,9 +111,11 @@ const Mainpage = () => {
   ];
 
   return (
-    <article class="wrapper">
+    <div>
+ 
+      <article class="wrapper">
       <div className="Container">
-        <h2 class="title">Web App Continent</h2>
+        <h2 class="title">  Welcome {username.name}  <button type="button" variant="outlined" onClick={handleLogout} style={{background:"white",border:"3px solid black",borderRadius:"12px",fontSize:"25px",color:"black",fontFamily:"monospace",    width: "15%",padding:'14px'}}>LOGOUT</button></h2>
         <TableContainer component={Paper}>
           <TableBody sx={{ textAlign: "center" }}>
             {rows.map((row) => (
@@ -116,7 +128,10 @@ const Mainpage = () => {
           </TableBody>
         </TableContainer>
       </div>
+    
     </article>
+
+    </div>
   );
 };
 

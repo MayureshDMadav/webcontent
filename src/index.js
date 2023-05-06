@@ -1,17 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Musicplayer from "./component/musicplayer/musicplayer";
-import Mainpage from "./pages/mainpage";
-import Urlshortner from "./component/urlshortner/urlshortner";
-import Reciepe from "./component/reciepe/reciepe";
-import Dictionary from "./component/dictionary/dictionary";
-import Youtube from "./component/ytomp3/youtube";
+import RoutePage from "./pages/RoutePage";
+import SingupPage from "./pages/singupPage";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    {/* <Musicplayer /> */}
-    {/* <Weatherapp /> */}
-    <Mainpage />
-  </React.StrictMode>
+ 
+ 
+  <BrowserRouter>
+  <RoutePage/>
+  </BrowserRouter>
+
+
 );
